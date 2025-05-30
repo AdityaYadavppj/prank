@@ -1,0 +1,76 @@
+/* Reset and base styles */
+body, html {
+    margin: 0; padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f7cac9, #92a8d1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255,255,255,0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.image {
+    width: 150px;
+    margin-bottom: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#yesBtn {
+    background-color: #ff6f91;
+    color: white;
+}
+
+#yesBtn:hover {
+    background-color: #ff4c7a;
+}
+
+#noBtn {
+    background-color: #88d8b0;
+    color: white;
+}
+
+#noBtn:hover {
+    background-color: #5bb68c;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+    button {
+        flex: 1;
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+}
